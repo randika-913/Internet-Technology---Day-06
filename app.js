@@ -90,14 +90,47 @@
 // }
 
 
-function changeHeading(){
-    let txtInput = document.getElementById("inputText");
+// function add(){
+//     let num1 = document.getElementById("inputText01");
+//     let num2 = document.getElementById("inputText02");
 
-    let userInput = txtInput.value;
+//     let sum = Number(num1.value) + Number(num2.value);
 
-    console.log(userInput);
+//     console.log(sum);
 
-    let heading = document.getElementById("heading");
-    heading.innerText = userInput;
+//     document.getElementById("heading").innerText = "SUM : " + sum;
+// }
 
+// function minus(){
+//     let num1 = document.getElementById("inputText01");
+//     let num2 = document.getElementById("inputText02");
+
+//     let sum = Number(num1.value) - Number(num2.value);
+
+//     console.log(sum);
+
+//     document.getElementById("heading").innerText = "SUM : " + sum;
+// }
+
+
+let customerList = [];
+
+function btnAddCustomerOnAction(){
+    let txtName = document.getElementById("txtName").value
+    let txtAddress = document.getElementById("txtAddress").value
+    let txtAge = document.getElementById("txtAge").value
+    let txtEmail = document.getElementById("txtEmail").value
+    let txtSalary = document.getElementById("txtSalary").value
+
+    let customer={
+        name:txtName,
+        address:txtAddress,
+        age:txtAge,
+        email:txtEmail,
+        salary:txtSalary,
+    }
+
+    customerList.push(customer);
+
+    console.log(customerList);
 }

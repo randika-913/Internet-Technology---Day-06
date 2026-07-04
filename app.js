@@ -79,9 +79,12 @@
 // heading.innerText = "Randika";
 
 let number = 0;
-function changeHeading() {
-    heading.innerText = "Randika"+number++;
+function plusHeading() {
+    heading.innerText = "Randika"+ (++number);
     console.log("Clicked");
     
-}
+}function minusHeading() {
+    heading.innerText = "Randika"+ (--number);
+    console.log("Clicked");
 
+}
